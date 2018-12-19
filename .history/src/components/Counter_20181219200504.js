@@ -16,6 +16,5 @@ function mapStateToProps(state) {
     }
 }
 export default connect(
-    mapStateToProps,
-    {increment, decrement}
+    mapStateToProps
 )(Counter);

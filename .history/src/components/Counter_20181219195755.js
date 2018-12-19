@@ -1,6 +1,5 @@
 import React  from 'react';
 import { connect } from 'react-redux';
-import { increment, decrement } from '../AC'
 
 const Counter  =  ({increment, decrement, count})  =>  (
             <div className="container">
@@ -16,6 +15,5 @@ function mapStateToProps(state) {
     }
 }
 export default connect(
-    mapStateToProps,
-    {increment, decrement}
+    mapStateToProps
 )(Counter);
